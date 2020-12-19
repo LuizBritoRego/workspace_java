@@ -1,0 +1,18 @@
+
+public class Produto {
+
+	int codBarras;
+	String nome;
+	String departamento;
+	double preco;
+	
+	void imprimir(){
+		System.out.println("Cod. de barras : "+codBarras);
+		System.out.println("Produto        : "+nome);
+		System.out.println("Departamento   : "+departamento);
+		System.out.printf("Preço           : R$ %.2f%n", preco);
+	}
+	void desconto(double percentual) {
+		return preco - preco*percentual/100; 
+	}
+}

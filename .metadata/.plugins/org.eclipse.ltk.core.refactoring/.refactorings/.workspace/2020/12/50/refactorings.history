@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;UniversPIArray&apos; to &apos;UniversPI-V2&apos;&#x0D;&#x0A;- Original element: &apos;UniversPIArray&apos;&#x0D;&#x0A;- Renamed element: &apos;UniversPIArray&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;UniversPIArray&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=UniversPIArray" name="UniversPI-V2" references="true" stamp="1607453519783" version="1.0"/>
+</session>

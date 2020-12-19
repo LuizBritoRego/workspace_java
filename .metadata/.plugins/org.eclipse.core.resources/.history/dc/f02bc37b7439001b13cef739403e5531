@@ -1,0 +1,12 @@
+package userinterface;
+
+import core.BDMySql;
+import core.DBOracle;
+
+public class SistemaPrincipal {
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

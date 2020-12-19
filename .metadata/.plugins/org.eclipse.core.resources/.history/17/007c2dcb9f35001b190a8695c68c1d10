@@ -1,0 +1,52 @@
+
+public class LojaVirtual {
+	public static void main(String[] args) {
+		Produto p1 = new Produto();
+		Produto p2 = new Produto();
+		Produto p3 = new Produto();
+		
+		int codBarras;
+		String nome;
+		String departamento;
+		double preco;
+		
+		p1.codBarras    = 11111;
+		p1.nome         = "Produto 01";
+		p1.departamento = "Cereais";
+		p1.preco        = 12.50;
+		
+		p2.codBarras    = 22222;
+		p2.nome         = "Produto 02";
+		p2.departamento = "Frios";
+		p2.preco        = 08.20;
+		
+		p3.codBarras    = 33333;
+		p3.nome         = "Produto 03";
+		p3.departamento = "Higiene";
+		p3.preco        = 05.00;
+		
+		System.out.println("====> Preço antes do desconto");
+		p1.imprimir();
+		System.out.println("=============================");
+		p2.imprimir();
+		System.out.println("=============================");
+		p3.imprimir();
+		System.out.println("=============================");
+
+		System.out.println("====> Aplicando descontos");
+		System.out.println("====> Preço antes do desconto");
+		System.out.printf("Preço ", nome, " antes R$ %.2f%n", p1.preco);	
+		System.out.printf("Preço p1 apos  R$ %.2f%n", p1.aplicarDesconto(10));	
+		System.out.println("=============================");
+		
+		System.out.printf("Preço p2 antes R$ %.2f%n", p2.preco);	
+		System.out.printf("Preço p2 apos  R$ %.2f%n", p2.aplicarDesconto(15));	
+		System.out.println("=============================");
+		
+		System.out.printf("Preço p3 antes R$ %.2f%n", p3.preco);	
+		System.out.printf("Preço p3 apos  R$ %.2f%n", p3.aplicarDesconto(5));	
+	
+		System.out.println("====> Descontos aplicados === FIM");
+
+	}
+}

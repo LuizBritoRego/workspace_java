@@ -1,0 +1,18 @@
+package userinterface;
+
+import model.BDOracle;
+import model.InterfaceBD;
+
+public class SistemaPrincipal {
+	public static void main(String[] args) {
+		
+	InterfaceBD ibd;
+	ibd = new BDMySql();
+	
+	ibd.conectar("MeuBanco", "usuario");
+	ibd.executar("Select * from Tabelax");
+	ibd.desconectar("MeuBanco");
+	
+	}
+
+}

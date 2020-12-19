@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="model.Banco"/>
+<fullyQualifiedTypeName name="model.CashBack"/>
+<fullyQualifiedTypeName name="model.CartaoPrePago"/>
+<fullyQualifiedTypeName name="model.QuestaoComDica"/>
+<fullyQualifiedTypeName name="model.QuestaoMultipla"/>
+</qualifiedTypeNameHistroy>

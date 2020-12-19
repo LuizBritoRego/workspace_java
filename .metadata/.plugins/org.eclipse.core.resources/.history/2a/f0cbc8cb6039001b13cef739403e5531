@@ -1,0 +1,20 @@
+package userinterface;
+
+import model.Empreiteiro;
+import model.Funcionario;
+
+public class FolhaPagamento extends Funcionario {
+	private double Salario;
+
+	public static void main(String[] args) {
+	} 
+	public FolhaPagamento(int numRegistro, String nome, double salario) {
+		super(numRegistro, nome);
+		Salario = salario;
+	}
+
+	s1 = new Empreiteiro (12345, "Manezinho", 500.00);
+	
+	s1.CalcularSalario();
+	
+}

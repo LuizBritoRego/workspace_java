@@ -1,0 +1,38 @@
+package model;
+
+import model.Funcionario;
+
+public class Horista extends Funcionario {
+	private double valorHora;
+	private double qtdehoras;
+	
+	public Horista(int numRegistro, String nome, double valorHora, double qtdehoras) {
+		super(numRegistro, nome);
+		this.valorHora = valorHora;
+		this.qtdehoras = qtdehoras;
+	}
+
+	public double getValorHora() {
+		return valorHora;
+	}
+
+	public void setValorHora(double valorHora) {
+		this.valorHora = valorHora;
+	}
+
+	public doubel getQtdehoras() {
+		return qtdehoras;
+	}
+
+	public void setQtdehoras(doubel qtdehoras) {
+		this.qtdehoras = qtdehoras;
+	}
+
+	@Override
+	public double calcularSalario() {
+		return valorHora * qtdeHoras;
+	}
+	
+	
+	
+}

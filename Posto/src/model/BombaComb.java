@@ -1,0 +1,70 @@
+package model;
+
+public class BombaComb {
+
+	private String combustivel;
+	private double valorLitro;
+	private double qtdeLitros;
+	private double valorTotal;
+
+	public BombaComb(String nome, double preco) {
+		this.combustivel = nome;
+		this.valorLitro = preco;
+		this.qtdeLitros = 0;
+		this.valorTotal = 0;
+	}
+	
+	public void abastecerValor (double valor) {
+		valorTotal = valor;
+		qtdeLitros = valor / valorLitro;
+	}
+	
+	public void abastecerLitro (double litros) {
+		qtdeLitros = litros;
+		valorTotal = qtdeLitros * valorLitro;
+	}
+	
+	public String exibirRecibo() {
+		String recibo = "======================================\n"+
+	                    "   A U T O P O S T O   B R I T A O \n"+
+				        "--------------------------------------\n"+
+	                    "Combustivel   : "+combustivel+"\n"+
+				        "Valor do litro: "+valorLitro+"\n"+
+	                    "Qtde Litros   : "+qtdeLitros+"\n"+
+				        "Total a pagar : "+valorTotal+"\n"+
+						"======================================";
+		return recibo;
+	}
+	
+	public String getCombustivel() {
+		return this.combustivel;
+	}
+
+	public void setCombustivel(String combustivel) {
+		this.combustivel = combustivel;
+	}
+
+	public double getValorLitro() {
+		return valorLitro;
+	}
+
+	public void setValorLitro(double valorLitro) {
+		this.valorLitro = valorLitro;
+	}
+
+	public double getQtdeLitros() {
+		return qtdeLitros;
+	}
+
+	public void setQtdeLitros(double qtdeLitros) {
+		this.qtdeLitros = qtdeLitros;
+	}
+
+	public double getValorTotal() {
+		return valorTotal;
+	}
+
+	public void setValorTotal(double valorTotal) {
+		this.valorTotal = valorTotal;
+	}
+}

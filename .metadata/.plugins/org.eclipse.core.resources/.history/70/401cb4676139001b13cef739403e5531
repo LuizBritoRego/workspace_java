@@ -1,0 +1,47 @@
+package userinterface;
+
+import java.util.Scanner;
+
+import model.Empreiteiro;
+import model.Funcionario;
+import model.QuestaoComDica;
+import model.QuestaoMultipla;
+import model.QuestaoSimples;
+
+public class FolhaPagamento extends Funcionario {
+	private double Salario;
+
+	public static void main(String[] args) {
+	} 
+	public FolhaPagamento(int numRegistro, String nome, double salario) {
+		super(numRegistro, nome);
+		Salario = salario;
+	}
+
+	Scanner teclado = new Scanner(System.in);
+	Funcionario salario[];
+	double      salarioBase;
+		
+	salario = new Funcionario[4]
+				
+	salario[0] = new Empreiteiro(11111,"Zezinho ", 1200.00);
+	salario[1] = new Comissionado(22222,"Mariazinha ", 800.00, 200.00);
+	salario(2] = new Chefe(99999,"Chefinho ", 5000.00, 20, 1500.00);
+	salario(3] = new Horista(55555,"Joaozinho ", 100.00, 80);
+
+	for (int pos=0; pos<avaliacao.length; pos++) {
+		System.out.println(salario[pos].calcularSalario());
+		}
+		System.out.println("-------------------------------------");
+	}
+	
+	System.out.println("Voce acertou um total de "+pontos+"/"+avaliacao.length);
+			 
+	teclado.close();
+	
+	
+	s1 = new Empreiteiro (12345, "Manezinho", 500.00);
+	
+	s1.CalcularSalario();
+	
+}
